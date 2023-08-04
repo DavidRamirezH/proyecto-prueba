@@ -54,13 +54,12 @@
     font-size: 16px;
     margin: 0;
   }
-/* Estilos generales para el botón */
 .boton-cerrar {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #f44336; /* Color de fondo */
-    color: white; /* Color del texto */
+    background-color: #f44336;
+    color: white; 
     font-size: 16px;
     padding: 8px 16px;
     border: none;
@@ -68,15 +67,11 @@
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
-  
-  /* Estilos para el botón al pasar el mouse sobre él */
   .boton-cerrar:hover {
-    background-color: #d32f2f; /* Cambiar el color de fondo al pasar el mouse */
+    background-color: #d32f2f; 
   }
-  
-  /* Estilos para el botón cuando está presionado */
   .boton-cerrar:active {
-    background-color: #b71c1c; /* Cambiar el color de fondo cuando se presiona el botón */
+    background-color: #b71c1c; 
   }
 
   .personaje{

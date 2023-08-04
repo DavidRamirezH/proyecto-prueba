@@ -11,10 +11,10 @@ export default function Home() {
             const resp = await data.json();
             const valorAleatorio = Math.floor(Math.random() * 20);
             const usuario = resp.results[valorAleatorio];
-            setUser(usuario); // Establecer el usuario después de obtener la respuesta de la API
+            setUser(usuario); 
         } catch (error) {
             console.error('Error al obtener los datos del usuario:', error);
-            setUser(null); // En caso de error, puedes establecer el usuario como null
+            setUser(null); 
         }
     };
 
