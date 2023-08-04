@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:  100%;
+    height: 600px;
+    margin: auto;
+    gap: 1em;
+}
+
+/* usuario tarjeta */
+.tarjeta-usuario{
+    background: var(--Darkblue);
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-bottom: 20px ;
+    overflow: auto;
+}
+.info-usuario{
+    background: var(--Blue) ;
+    border-radius: 10px;
+    padding: 20px 30px;
+    padding-bottom: 40px;
+ 
+}
+.info-usuario div{
+    margin: 20px 0 40px;
+}
+.info-usuario div p:nth-child(1){
+    color: var(--Desaturatedblue);
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+.user-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2PX solid white;
+    margin-top: 10px;
+}
+.texto-user{
+    font-size: 1em;
+}
+.nombre{
+    font-size: 2.2em;
+    width: 100%;
+}
+.tarjeta-usuario > h2{
+    margin: 10px 30px;
+}
+.tarjeta-usuario div > .active{
+    color: var(--white);
+}
+.tarjeta-usuario button{
+    margin: 5px 30px;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1em;
+    color: var(--Desaturatedblue);
+    cursor: pointer;
+    padding: 5px 10px 5px 0;
+   
+}
+.tarjeta-usuario button:hover{
+    transform: scale(1.1);
+    transition: .2s ;
+}
+.tarjeta-usuario .actualizar{
+    text-align: left;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+/* tarjetas*/
+.cont-tarjetas-info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 800px;
+    gap: 1em;
+    row-gap: 2rem;
+}
+/* usuario tarjeta */
+.tarjetas{
+    width:30%;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.info-tarjetas{
+    background: var(--Darkblue);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    position: relative;
+}
+
+.info-tarjetas div p:nth-child(1){
+    color: var(--Desaturatedblue);
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+.contenedor-imagen{
+    position: relative;
+    height: 20px;
+}
+.tarjetas-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2PX solid white;
+    margin-top: 10px;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+    right: -15px;
+    z-index: 1;
+}
+.texto-tarjetas{
+    font-size: .9em;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+}
+.nombre-tarjetas{
+    font-size: 1.4em;
+    margin: 10px 0;
+    width: 100%;
+    font-weight: 600;
+}
+.especie{
+    padding: 5px;
+    text-align: right;
+    border-bottom: 2px solid var(--Desaturatedblue);
+    font-family: 'Roboto', sans-serif;
+}
+.boton-capitulos{
+    background: var(--Blue);
+    color: var(--white);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* colores tj */
+.contenedor-tarjetas .tarjetas:nth-child(1){
+    background-color: var(--LightredWork);
+}
+.contenedor-tarjetas .tarjetas:nth-child(2){
+    background-color: var(--Softblueplay);
+}
+.contenedor-tarjetas .tarjetas:nth-child(3){
+    background-color: var(--Lightredstudy);
+}
+.contenedor-tarjetas .tarjetas:nth-child(4){
+    background-color:var(--Limegreenexercise);
+}
+.contenedor-tarjetas .tarjetas:nth-child(5){
+    background-color: var(--Violetsocial);
+}
+.contenedor-tarjetas .tarjetas:nth-child(6){
+    background-color: var(--Softorangeselfcare);
+}
+
+@media (max-width:1280px) { 
+    .contenedor-tarjetas{
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:  80%;
+        height: max-content;
+        margin: 20px auto;
+        gap: 1em;
+    }
+    .tarjeta-usuario{
+        background: var(--Darkblue);
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        margin-left: 0px;
+        padding-bottom: 10px ;
+        overflow: auto;
+    }
+    .tarjeta-usuario > div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .tarjeta-usuario button{
+        margin: 0;
+    }
+    .tarjeta-usuario > div button{
+        width: 30%;
+    }
+    .info-usuario{
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+.cont-tarjetas-info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+    row-gap: 2rem;
+}
+.tarjetas{
+    width:100%;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.info-tarjetas{
+    background: var(--Darkblue);
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 5px;
+    position: relative;
+}
+.boton-capitulos{
+   border-radius: 0 0 10px 10px;
+}
+}
